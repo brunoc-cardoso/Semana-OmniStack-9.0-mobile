@@ -12,6 +12,7 @@ export default function Login({ navigation }) {
     AsyncStorage.getItem('user').then(user => {
       if (user) navigation.navigate('List');
     })
+    
   }, []);
 
   async function handleSubmit() {
